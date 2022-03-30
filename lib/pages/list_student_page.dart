@@ -13,7 +13,7 @@ class _ListStudentPageState extends State<ListStudentPage> {
   final Stream<QuerySnapshot> studentsStream =
       FirebaseFirestore.instance.collection('students').snapshots();
 
-  //for deleteing user
+  //for deleting user
   CollectionReference students =
       FirebaseFirestore.instance.collection('students');
   Future<void> deleteUser(id) {
